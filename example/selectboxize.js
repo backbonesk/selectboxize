@@ -1,3 +1,7 @@
+/*! selectboxize - v0.7.0 - 2012-12-29
+* http://github.com/backbonesk/selectboxize
+* Copyright (c) 2012 ; Licensed MIT */
+
 (function($){
   $.fn.selectboxize = function(options) {
     // Processing options.
@@ -43,7 +47,7 @@
 
       var replacement = $(
         '<div class="' + options.theme + ' ' + options.commonClass + '">' +
-          '<div class="' + options.theme + '-more" />' +
+          '<a href="#" class="' + options.theme + '-more" />' +
           '<div class="' + options.theme + '-list" />' +
           '<span class="' + options.theme + '-current" />' +
         '</div>'
@@ -51,7 +55,7 @@
 
       $('option', _this).each(function(k, v) {
         var $value = $(v);
-        var listElement =  $('<span class="' + options.theme + '-item" data-item="' + k + '" data-value="' + $value.val() + '">' + $value.text() + '</span>');
+        var listElement =  $('<a href="#" class="' + options.theme + '-item" data-item="' + k + '" data-value="' + $value.val() + '">' + $value.text() + '</a>');
 
         listElement.click(function(event) {
           var $thisListElement = $(this);

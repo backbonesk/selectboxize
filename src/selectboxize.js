@@ -43,7 +43,7 @@
 
       var replacement = $(
         '<div class="' + options.theme + ' ' + options.commonClass + '">' +
-          '<div class="' + options.theme + '-more" />' +
+          '<a href="#" class="' + options.theme + '-more" />' +
           '<div class="' + options.theme + '-list" />' +
           '<span class="' + options.theme + '-current" />' +
         '</div>'
@@ -51,7 +51,7 @@
 
       $('option', _this).each(function(k, v) {
         var $value = $(v);
-        var listElement =  $('<span class="' + options.theme + '-item" data-item="' + k + '" data-value="' + $value.val() + '">' + $value.text() + '</span>');
+        var listElement =  $('<a href="#" class="' + options.theme + '-item" data-item="' + k + '" data-value="' + $value.val() + '">' + $value.text() + '</a>');
 
         listElement.click(function(event) {
           var $thisListElement = $(this);
@@ -127,7 +127,7 @@
 
   $.fn.selectboxize.options = {
     theme: 'selectboxize',
-    commonClass: 'selectboxize-replaced',
+    commonClass: 'fake-custom-selectbox-replaced',
     listboxMaxSize: 15,
     replaceInvisible: false,
     callback: null
