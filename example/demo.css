@@ -1,0 +1,221 @@
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+/* always force a scrollbar in non-IE */
+html {
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased; }
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ v1.0 | 20080212 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ul, li {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: none; }
+
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
+td, td img {
+  vertical-align:top; }
+
+::-webkit-input-placeholder, input:-moz-placeholder {
+  line-height: 18px; }
+
+/**
+ General layout */
+body {
+  background: #fff;
+  color: #444;
+  font: 12px/18px Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 765px; }
+
+code {
+  font: 11px/18px Monaco, Consolas, 'Courier New', monospace; }
+
+article {
+  margin-left: 225px;
+  padding-top: 12px; }
+
+section {
+  clear: left;
+  margin: 0 0 36px;
+  overflow: hidden;
+  position: relative;
+
+  p, .subhead {
+    padding: 18px 0 0 27px; }
+}
+
+footer {
+  clear: both;
+  font-size: 11px;
+  padding: 18px 0 36px 235px; }
+
+a {
+  color: #198bbe;
+  text-decoration:none; }
+
+a:hover {
+  text-decoration: underline; }
+
+h2 + p {
+  padding-top: 0; }
+
+p + table {
+  margin-top: 18px; }
+
+.first, .subhead {
+  padding-top: 18px; }
+
+.hidden {
+  text-indent: -999em; }
+
+/**
+ Navigation */
+header {
+  background: #f8f8f8;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  position: fixed;
+  width: 200px; }
+
+header hgroup {
+  border-bottom: 1px solid #fff;
+  padding: 27px 15px 18px; }
+
+header li {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #fff;
+  line-height: 27px; }
+
+.branding {
+  background: url('selectboxize.png') no-repeat;
+  height: 23px;
+  margin-bottom: 9px;
+  width: 133px; }
+.tagline {
+  font-weight: normal; }
+
+article {
+  font: 13.34px Helvetica, Arial, Freesans, Clean, sans-serif;
+  line-height: 1.4em;
+  padding: 2em 0.7em 0.7em; }
+
+article p {
+  margin: 1em 0;
+  line-height: 1.5em; }
+
+article pre, article code {
+  font: 12px Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; }
+
+article pre {
+  background-color: #444;
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0,0,0,0.07) 0 1px 2px inset;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin: 1em 0;
+  overflow: auto;
+  padding: 5px;
+  -webkit-font-smoothing: antialiased; }
+
+article pre code {
+  background-color: #444;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 0; }
+
+article code {
+  background-color: #fcf9c9;
+  border:1px solid #eae159;
+  color: #444;
+  font-size:12px;
+  padding:0 .2em; }
+
+article a code, article a:link code, article a:visited code {
+  color: #4183c4; }
+article h2, article h3 {
+  margin: 1em 0; }
+
+article h1, article h2, article h3 {
+  border: 0; }
+
+article h1 {
+  border-top: 4px solid #aaa;
+  font-size: 170%;
+  margin-top: 1.5em;
+  padding-top: .5em; }
+
+article h1:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: .25em; }
+
+article h2 {
+  border-top: 4px solid #e0e0e0;
+  font-size: 150%;
+  margin-top: 1.5em;
+  padding-top: .5em; }
+
+article h3 {
+  font-size: 120%;
+  margin-top: 1em; }
+
+article ul, article ol {
+  margin: 1em 0 1em 1em; }
+article ul li, article ol li {
+  list-style: disc inside;
+  margin-bottom: .5em;
+  margin-top: .5em; }
+
+article ul ul, article ul ol, article ol ol, article ol ul {
+  margin-bottom: 0;
+  margin-top: 0; }
+article blockquote {
+  border-left: 5px solid #ddd;
+  color:#555;
+  margin: 1em 0;
+  padding-left: .6em; }
