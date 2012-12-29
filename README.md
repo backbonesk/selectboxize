@@ -7,7 +7,7 @@ Just add jQuery and the following dependencies to your site:
 
 ``` html
 <script src="selectboxize.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.selectbox.css">
+<link rel="stylesheet" type="text/css" href="selectboxize.css">
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ By running the example the selectbox will be changed into a bunch of HTML nodes 
     <span class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</span>
     <span class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
   </div>
-  <span class="selectboxize-list-currentItem">Slovakia</span>
+  <span class="selectboxize-list-current">Slovakia</span>
 </div>
 ```
 
