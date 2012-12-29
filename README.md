@@ -21,6 +21,7 @@ $('#demo-selectbox').selectboxize();
 Selectboxize call can take an optional parameter -- an object of key / value settings:
 
 - **theme** *(default: "selectboxize")* - name of the colour theme prefixing class names applied to replaced selectboxes.
+- **commonClass** *(default: "selectboxize-replaced")* - class name that is applied to root element of all replaced selectboxes.
 - **listboxMaxSize** *(default: 15)* - maximum number of displayed items in rolled out selectbox without a scrollbar.
 - **replaceInvisible** *(default: false)* - replace selectboxes even if they are not displayed (e.g. with `display: none` applied).
 - **callback** *(default: null)* - function that runs after a new item has been selected.
@@ -38,11 +39,11 @@ Take a look at the following example, where there is a simple selectbox in HTML:
 By running the example the selectbox will be changed into a bunch of HTML nodes and can be styled as such:
 
 ``` html
-<div class="selectboxize-list fake-custom-selectbox-replaced">
+<div class="selectboxize-list selectboxize-replaced">
   <div class="selectboxize-list-more"></div>
   <div class="selectboxize-list-list">
-    <span class="selectboxize-list-item item-0" data-value="1">Slovakia</span>
-    <span class="selectboxize-list-item item-1" data-value="2">Sweden</span>
+    <span class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</span>
+    <span class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
   </div>
   <span class="selectboxize-list-currentItem">Slovakia</span>
 </div>

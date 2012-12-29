@@ -1,0 +1,25 @@
+{
+  "name": "selectboxize",
+  "description": "A simple JavaScript library for styling selectboxes.",
+  "version": "0.7.0",
+  "author": "Pavol Sopko <pavol.sopko@backbone.sk>, Krzysztof Suszyński <k.suszynski@wit.edu.pl>",
+  "homepage": "http://github.com/palosopko/selectboxize",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/palosopko/selectboxize.git"
+  },
+  "bugs": {
+    "url" : "http://github.com/palosopko/selectboxize/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/palosopko/selectboxize/blob/master/MIT-LICENSE"
+    }
+  ],
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  }
+}

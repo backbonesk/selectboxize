@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Selectboxize – jQuery Custom Selectboxes</title>
-  <link href="/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="demo.css"></style>
-  <link rel="stylesheet" href="../selectboxize.css">
+  <link rel="stylesheet" href="selectboxize.css">
 </head>
 <body>
   <header>
@@ -21,7 +20,7 @@
     <p>Selectboxize is a simple and lightweight JavaScript library for styling and replacing default selectboxes. The library is heavily based on <a href="http://info.wsisiz.edu.pl/~suszynsk/jQuery/demos/jquery-selectbox/">previous work by Krzysztof Suszyński</a>.</p>
 
     <h2>Regular selectbox</h2>
-    <select id="countries-1">
+    <select name="countries1" id="countries-1">
       <option value="Afghanistan">Afghanistan</option>
       <option value="Aland Islands">Aland Islands</option>
       <option value="Albania">Albania</option>
@@ -276,7 +275,7 @@
 
     <h2>Restricted width</h2>
     <p>The width is restricted by applying <code>width: 150px</code> on the <code>&lt;select&gt;</code> definition in HTML.</p>
-    <select id="countries-2" style="width: 150px">
+    <select name="countries2" id="countries-2" style="width: 150px">
       <option value="Afghanistan">Afghanistan</option>
       <option value="Aland Islands">Aland Islands</option>
       <option value="Albania">Albania</option>
@@ -531,7 +530,7 @@
 
     <h2>Restricted number of items rolled-out</h2>
     <p>When selectbox is clicked and rolled out only 5 items are visible (default is 15).</p>
-    <select id="countries-3">
+    <select name="countries3" id="countries-3">
       <option value="Afghanistan">Afghanistan</option>
       <option value="Aland Islands">Aland Islands</option>
       <option value="Albania">Albania</option>
@@ -788,7 +787,7 @@
 
     <h2>Callback upon a value selection</h2>
     <p>The following example will display an alert modal dialog upon selecting a value.</p>
-    <select id="countries-4">
+    <select name="countries4" id="countries-4">
       <option value="1">Afghanistan</option>
       <option value="2">Aland Islands</option>
       <option value="3">Albania</option>
@@ -1046,7 +1045,7 @@
 });</code></pre>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="../selectboxize.js"></script>
+    <script src="selectboxize.js"></script>
     <script>
       $('#countries-1').selectboxize();
       $('#countries-2').selectboxize();
