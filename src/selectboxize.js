@@ -9,7 +9,7 @@
       listOpen = true;
   
       $(document).bind('click.selectboxize', onBlurList);
-  
+
       return listObj.addClass('opened');
     };
 
@@ -81,7 +81,8 @@
         $('.' + options.theme + '-list', replacement).append(listElement);
 
         if($value.filter(':selected').length > 0) {
-          $('.'+options.theme + '-current', replacement).text($value.text());
+          $('.' + options.theme + '-current', replacement)
+            .text($value.text());
         }
       });
 
@@ -127,7 +128,7 @@
 
   $.fn.selectboxize.options = {
     theme: 'selectboxize',
-    commonClass: 'fake-custom-selectbox-replaced',
+    commonClass: 'selectboxize-replaced',
     listboxMaxSize: 15,
     replaceInvisible: false,
     callback: null

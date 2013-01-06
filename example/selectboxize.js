@@ -1,6 +1,6 @@
-/*! selectboxize - v0.7.0 - 2012-12-29
+/*! selectboxize - v0.7.0 - 2013-01-06
 * http://github.com/backbonesk/selectboxize
-* Copyright (c) 2012 ; Licensed MIT */
+* Copyright (c) 2013 ; Licensed MIT */
 
 (function($){
   $.fn.selectboxize = function(options) {
@@ -13,7 +13,7 @@
       listOpen = true;
   
       $(document).bind('click.selectboxize', onBlurList);
-  
+
       return listObj.addClass('opened');
     };
 
@@ -85,7 +85,8 @@
         $('.' + options.theme + '-list', replacement).append(listElement);
 
         if($value.filter(':selected').length > 0) {
-          $('.'+options.theme + '-current', replacement).text($value.text());
+          $('.' + options.theme + '-current', replacement)
+            .text($value.text());
         }
       });
 
@@ -131,7 +132,7 @@
 
   $.fn.selectboxize.options = {
     theme: 'selectboxize',
-    commonClass: 'fake-custom-selectbox-replaced',
+    commonClass: 'selectboxize-replaced',
     listboxMaxSize: 15,
     replaceInvisible: false,
     callback: null

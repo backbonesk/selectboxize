@@ -40,10 +40,10 @@ By running the example the selectbox will be changed into a bunch of HTML nodes 
 
 ``` html
 <div class="selectboxize-list selectboxize-replaced">
-  <div class="selectboxize-list-more"></div>
+  <a href="#" class="selectboxize-list-more"></a>
   <div class="selectboxize-list-list">
-    <span class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</span>
-    <span class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
+    <a href="#" class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</a>
+    <a href="#" class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
   </div>
   <span class="selectboxize-list-current">Slovakia</span>
 </div>
