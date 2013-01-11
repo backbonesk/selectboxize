@@ -67,7 +67,7 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.selectboxize-item:hover, .selectboxize-item:focus {
+.selectboxize-item-hover {
   background: #b0e5ff;
   color: #000;
   outline: 0;

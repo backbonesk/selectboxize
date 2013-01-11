@@ -39,11 +39,11 @@ Take a look at the following example, where there is a simple selectbox in HTML:
 By running the example the selectbox will be changed into a bunch of HTML nodes and can be styled as such:
 
 ``` html
-<div class="selectboxize-list selectboxize-replaced">
+<div class="selectboxize-list selectboxize-replaced" data-selection="0">
   <a href="#" class="selectboxize-list-more"></a>
   <div class="selectboxize-list-list">
-    <a href="#" class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</a>
-    <a href="#" class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
+    <span class="selectboxize-list-item" data-item="0" data-value="1">Slovakia</span>
+    <span class="selectboxize-list-item" data-item="1" data-value="2">Sweden</span>
   </div>
   <span class="selectboxize-list-current">Slovakia</span>
 </div>

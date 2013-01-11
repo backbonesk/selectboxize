@@ -1040,12 +1040,12 @@
     </select>
     <pre><code>$('#countries-4').selectboxize({
   'callback': function(item, e) {
-    alert("You have selected country '" + $(item).text() + "' with value of '" + $(item).data('value') + "'.");
+    alert("You have selected '" + $(item).text() + "' with value of '" + $(item).data('value') + "'.");
   }
 });</code></pre>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="selectboxize.js"></script>
+    <script src="selectboxize.min.js"></script>
     <script>
       $('#countries-1').selectboxize();
       $('#countries-2').selectboxize();
@@ -1054,7 +1054,7 @@
       });
       $('#countries-4').selectboxize({
         'callback': function(item, e) {
-          alert("You have selected country '" + $(item).text() + "' with value of '" + $(item).data('value') + "'.");
+          alert("You have selected '" + $(item).text() + "' with value of '" + $(item).data('value') + "'.");
         }
       });
     </script>
