@@ -1,6 +1,7 @@
 {
   "name": "selectboxize",
   "description": "A simple JavaScript library for styling selectboxes.",
+  "main": [ "./src/selectboxize.min.js" ],
   "version": "0.7.1",
   "author": "Pavol Sopko <pavol.sopko@backbone.sk>, Krzysztof Suszyński <k.suszynski@wit.edu.pl>",
   "homepage": "http://github.com/backbonesk/selectboxize",
