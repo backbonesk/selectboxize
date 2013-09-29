@@ -194,7 +194,7 @@
 
       thisListBox.css({
         'width': _this.width(),
-        'height': options.listboxMaxSize * 24
+        'height': Math.min(options.listboxMaxSize, thisListBoxSize) * 24
       });
     });
   };
