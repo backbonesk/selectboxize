@@ -194,7 +194,7 @@
 
       thisListBox.css({
         'width': _this.width(),
-        'height': Math.min(options.listboxMaxSize, thisListBoxSize) * 24
+        'height': Math.min(options.listboxMaxSize, thisListBoxSize) * options.listboxItemHeight
       });
     });
   };
@@ -203,6 +203,7 @@
     theme: 'selectboxize',
     commonClass: 'selectboxize-replaced',
     listboxMaxSize: 15,
+    listboxItemHeight: 24,
     replaceInvisible: false,
     callback: null
   };
